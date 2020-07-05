@@ -1,0 +1,14 @@
+name: Container
+on: push
+
+jobs:
+  node-container:
+    runs-on: ubuntu-latest
+    container:
+      image: node:12.18.2-stretch
+
+    steps:
+      - name: Log node version
+        run: |
+          node -v
+          cat /etc/os-release
