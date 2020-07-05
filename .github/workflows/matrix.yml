@@ -20,7 +20,7 @@ jobs:
 
     runs-on: ${{ matrix.os }}
     env:
-      IS_UBUNTU_8: ${{ is_ubuntu_8 }}
+      IS_UBUNTU_8: ${{ matrix.is_ubuntu_8 }}
     steps:
       - name: Log node node-versions
         run: node -v
