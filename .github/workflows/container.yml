@@ -26,9 +26,9 @@ jobs:
         run: |
           ls -lrt
           chmod +x script.sh
-        with:
-          entrypoint: ./script.sh
-          args: "some string"
+        # with:
+        #   entrypoint: ./script.sh
+        #   args: "some string"
 
   node-container:
     runs-on: ubuntu-latest
